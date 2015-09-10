@@ -8,5 +8,14 @@ var wordOrder = function(phrase) {
     wordHash[word] = 1;
   };
 
+  phraseArray.forEach(function(word) {
+    var index = phraseArray.indexOf(word);
+    for(var j = index + 1; j < phraseArray.length; j += 1) {
+      if (phraseArray[j] === word) {
+        wordHash[word] = 2;
+      };
+    };
+  });
+
   return wordHash;
 };
