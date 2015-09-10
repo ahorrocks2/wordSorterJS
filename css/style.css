@@ -1,0 +1,14 @@
+body {
+  background: url("images/order.jpg") center top no-repeat;
+  padding-top: 200px;
+
+}
+
+.container {
+  text-align: center;
+  font-family: 'Metamorphous', cursive;
+}
+
+#result {
+  display: none;
+}
